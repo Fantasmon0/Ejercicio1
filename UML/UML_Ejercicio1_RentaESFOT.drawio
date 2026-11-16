@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2026-11-15T20:20:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="diagram_1" name="Ejercicio 1 - RentaESFOT">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_veh" value="Vehiculo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="30" width="480" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_veh" value="- placa : String&lt;br&gt;- marca : String&lt;br&gt;- modelo : String&lt;br&gt;- tarifaBase : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_veh">
+          <mxGeometry y="28" width="480" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_veh" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_veh">
+          <mxGeometry y="110" width="480" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_veh" value="+ Vehiculo(placa: String, marca: String, modelo: String, tarifaBase: double)&lt;br&gt;+ getPlaca() : String&lt;br&gt;+ getMarca() : String&lt;br&gt;+ getModelo() : String&lt;br&gt;+ getTarifaBase() : double&lt;br&gt;+ calcularTarifaDiaria() : double&lt;br&gt;+ calcularAlquiler(dias: int) : double&lt;br&gt;+ calcularAlquiler(dias: int, porcentajeDescuento: double) : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_veh">
+          <mxGeometry y="118" width="480" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_auto" value="Auto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="360" width="520" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_auto" value="- numeroPuertas : int&lt;br&gt;- aireAcondicionado : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_auto">
+          <mxGeometry y="28" width="520" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_auto" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_auto">
+          <mxGeometry y="74" width="520" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_auto" value="+ Auto(placa: String, marca: String, modelo: String, tarifaBase: double, numeroPuertas: int, aireAcondicionado: boolean)&lt;br&gt;+ getNumeroPuertas() : int&lt;br&gt;+ isAireAcondicionado() : boolean&lt;br&gt;+ calcularTarifaDiaria() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_auto">
+          <mxGeometry y="82" width="520" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_cam" value="Camioneta" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="510" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_cam" value="- capacidadCarga : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_cam">
+          <mxGeometry y="28" width="510" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_cam" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_cam">
+          <mxGeometry y="56" width="510" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_cam" value="+ Camioneta(placa: String, marca: String, modelo: String, tarifaBase: double, capacidadCarga: double)&lt;br&gt;+ getCapacidadCarga() : double&lt;br&gt;+ calcularTarifaDiaria() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_cam">
+          <mxGeometry y="64" width="510" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="inh_auto" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_auto" target="cls_veh">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inh_cam" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_cam" target="cls_veh">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
